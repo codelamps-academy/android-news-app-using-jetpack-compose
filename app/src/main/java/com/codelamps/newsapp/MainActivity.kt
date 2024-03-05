@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.codelamps.newsapp.presentation.onboarding.OnBoardingScreen
 import com.codelamps.newsapp.ui.theme.NewsAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -33,7 +34,7 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             NewsAppTheme {
-
+                OnBoardingScreen()
             }
         }
     }
