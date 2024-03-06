@@ -11,8 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import com.codelamps.newsapp.presentation.Dimens
 
+// PAGE INDICATOR DIGUNAKAN UNTUK MEMBERIKAN INDICATOR DI HALAMAN
 @Composable
 fun PageIndicator(
     modifier : Modifier = Modifier,
@@ -25,7 +27,7 @@ fun PageIndicator(
     Row (modifier = modifier,
         horizontalArrangement = Arrangement.SpaceBetween){
         repeat(pageSize){page ->
-            Box(modifier = Modifier.size(Dimens.dp14).clip(CircleShape)
+            Box(modifier = Modifier.size(12.dp).clip(CircleShape)
                 .background(color = if (page == selectedPage) selectedColor else unselectedColor))
             
         }

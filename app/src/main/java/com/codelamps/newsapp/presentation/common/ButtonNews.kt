@@ -19,7 +19,7 @@ fun ButtonNews(
 ){
 
     Button(onClick = { /*TODO*/ }, colors = ButtonDefaults.buttonColors(
-        containerColor = MaterialTheme.colorScheme.primary,
+        containerColor = Color.Black,
         contentColor = Color.White
     )) {
         Text(text = text,

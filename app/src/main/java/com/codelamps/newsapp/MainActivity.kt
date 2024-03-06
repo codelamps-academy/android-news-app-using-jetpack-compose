@@ -15,12 +15,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.WindowCompat
 import com.codelamps.newsapp.presentation.onboarding.OnBoardingScreen
 import com.codelamps.newsapp.ui.theme.NewsAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // MENGGUNAKAN SELURUH LAYAR UNTUK APLIKASI
+//        WindowCompat.setDecorFitsSystemWindows(window, false)
+
+        // UNTUK MENAMPILKAN SPLASH SCREEN
         installSplashScreen().setOnExitAnimationListener { splashScreenView ->
             // Tambahkan durasi splash screen
             Handler(Looper.getMainLooper()).postDelayed({
