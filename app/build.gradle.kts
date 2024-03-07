@@ -73,4 +73,7 @@ dependencies {
 
     //Accompanist
     implementation ("com.google.accompanist:accompanist-systemuicontroller:0.31.4-beta")
+
+    // DATA STORE
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 }
