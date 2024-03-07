@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -76,4 +78,9 @@ dependencies {
 
     // DATA STORE
     implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    //DAGGER HILT
+    implementation ("com.google.dagger:hilt-android:2.45")
+    implementation ("com.google.dagger:hilt-compiler:2.45")
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
 }
